@@ -1,0 +1,13 @@
+body{
+    background-image:url(img/congruent_pentagon.png);
+    background-repeat:repeat; 
+}
+
+.form-item{
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.entry{
+    margin-left:15px;
+}
