@@ -10,4 +10,33 @@ body{
 
 .entry{
     margin-left:15px;
+    margin-right:15px;
+    
+}
+
+#blogArea{
+    background-color:rgba(255,255,255,0.8);
+    padding:5px;
+    margin:15px;
+    border-radius:5px;
+    margin-top:100px;
+    
+}
+
+h3{
+    color:#0081FF!important;
+    /* background-image: -webkit-linear-gradient(left, #FFF0B7, white); */
+    padding:2px;
+}
+
+.header{
+    position:fixed;
+    height:80px;
+    top:0px;
+    width:100%;
+    background-image: -webkit-linear-gradient(top, black,#004486);
+}
+
+.header > h1{
+    color:white !important;
 }

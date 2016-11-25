@@ -20,17 +20,27 @@ crossorigin="anonymous"></script>
 
 <script type="text/javascript" src="blog.js"></script>
 
+<script src="http://cdn.tinymce.com/4/tinymce.min.js"></script>
+<script>tinymce.init({
+     selector:'#textta', 
+     plugins  :'link', 
+     toolbar :'link'
+    });</script>
+
 <link href="style.css" type="text/css" rel="stylesheet">
 
 </head>
     
 <body>
-    <h1>Esto es una prueba</h2>
+    <div class="header">
+        <h1 style="text-align:center !important">Esto es una prueba</h2>
+    </div>
+    
     <div id="blogArea">
         
     </div>
-    <div>
-        <button id="showform-create" class="btn btn-default">Crear entrada</button>
+    <div class="entry">
+        <button id="showform-create" class="btn btn-info btn-block">Crear entrada</button>
     <div>
     
     <div class="modal fade" id="addEntryModal" role="dialog">
@@ -45,7 +55,7 @@ crossorigin="anonymous"></script>
                 <div class="modal-body">
                     <div id="plugins">
                          <input type="text" id="titletb" name="qtytb" class="form-control form-item" placeholder="Titulo..." />
-                         <input type="text" id="texttb" name="qtytb" class="form-control form-item" placeholder="Texto..." />
+                         <textarea id="textta"></textarea>
                          <button id="sendEntryButton" class="btn btn-info btn-block form-item">Crear entrada</button> 
                     </div>
                 </div>

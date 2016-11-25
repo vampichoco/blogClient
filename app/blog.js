@@ -30,8 +30,12 @@ function loadBlog(){
 }
 
 function sendEntry(){
+    tinyMCE.triggerSave();
+    
     var title = $('#titletb').val(); 
-    var text = $('#texttb').val(); 
+    var text = $('#textta').val(); 
+    
+    window.alert(text);
     
     var ob = {title: title, text:text}
     var data = JSON.stringify(ob);
@@ -52,7 +56,7 @@ function sendEntry(){
                div.append(titlehtml); 
                div.append(texthtml); 
            
-               $('#blogArea').append(div);
+               $('#blogArea').prepend(div);
            }).fail(function (err) {
                
            })
