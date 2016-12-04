@@ -12,7 +12,7 @@ function onLoad(){
 }
 
 function loadBlog(){
-    var url = "http://localhost:5000/blog"
+    var url = "http://52.207.235.164/blog"
     $.getJSON(url, function(res){
        $.each(res, function(index){
            var entry = res[index];
@@ -40,7 +40,7 @@ function sendEntry(){
     var ob = {title: title, text:text}
     var data = JSON.stringify(ob);
     
-    var url = "http://localhost:5000/upload";
+    var url = "http://52.207.235.164/upload";
 
            $.ajax({
                type: "POST",
