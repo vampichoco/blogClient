@@ -9,10 +9,11 @@ function onLoad(){
     }) 
     
     $('#sendEntryButton').click(sendEntry);
+    $('#createContentButton').click(createContent);
 }
 
 function loadBlog(){
-    var url = "http://52.207.235.164/blog"
+    var url = "http://localhost:5000/blog"
     $.getJSON(url, function(res){
        $.each(res, function(index){
            var entry = res[index];
@@ -40,7 +41,7 @@ function sendEntry(){
     var ob = {title: title, text:text}
     var data = JSON.stringify(ob);
     
-    var url = "http://52.207.235.164/upload";
+    var url = "http://localhost:5000/upload";
 
            $.ajax({
                type: "POST",
@@ -63,4 +64,39 @@ function sendEntry(){
            
      $('#addEntryModal').modal('hide');
 }
- 
+
+
+function createContent(){
+    tinyMCE.triggerSave();
+    
+    var title = $('#titletb').val(); 
+    var text = $('#textta').val(); 
+    
+    window.alert(text);
+    
+    var ob = {name: title, content:text}
+    var data = JSON.stringify(ob);
+    
+    var url = "http://localhost:5000/createcontent";
+
+           $.ajax({
+               type: "POST",
+               data: data,
+               url: url,
+               contentType: "application/json",
+               dataType: 'json'
+           }).done(function (res) {
+               var titlehtml = $('<h3></h3>').html(title); 
+               var texthtml = $('<article></article>').html(text);
+           
+               var div = $('<div class="entry"></div>') 
+               div.append(titlehtml); 
+               div.append(texthtml); 
+           
+               $('#blogArea').prepend(div);
+           }).fail(function (err) {
+               
+           })
+           
+     $('#addEntryModal').modal('hide');
+}
