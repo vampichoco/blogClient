@@ -13,7 +13,7 @@ function onLoad(){
 }
 
 function loadBlog(){
-    var url = "http://localhost:5000/blog"
+    var url = "http://sadzee.cloud/blog"
     $.getJSON(url, function(res){
        $.each(res, function(index){
            var entry = res[index];
@@ -41,7 +41,7 @@ function sendEntry(){
     var ob = {title: title, text:text}
     var data = JSON.stringify(ob);
     
-    var url = "http://localhost:5000/upload";
+    var url = "http://sadzee.cloud/upload";
 
            $.ajax({
                type: "POST",
@@ -77,7 +77,7 @@ function createContent(){
     var ob = {name: title, content:text}
     var data = JSON.stringify(ob);
     
-    var url = "http://localhost:5000/createcontent";
+    var url = "http://sadzee.cloud/createcontent";
 
            $.ajax({
                type: "POST",
