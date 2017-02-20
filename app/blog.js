@@ -10,6 +10,7 @@ function onLoad(){
     
     $('#sendEntryButton').click(sendEntry);
     $('#createContentButton').click(createContent);
+
 }
 
 function loadBlog(){

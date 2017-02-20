@@ -1,65 +1,148 @@
 <html>
-    
+
 <head>
 
 <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
- integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
- crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" 
-href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
-integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" 
-crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" 
+        crossorigin="anonymous">
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
-integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
-crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+        crossorigin="anonymous"></script>
 
-<script type="text/javascript" src="blog.js"></script>
+    <script type="text/javascript" src="page.js"></script>
 
-<script src="http://cdn.tinymce.com/4/tinymce.min.js"></script>
-<script>tinymce.init({
-     selector:'#textta', 
-     plugins  :'link', 
-     toolbar :'link'
+    <script src="http://cdn.tinymce.com/4/tinymce.min.js"></script>
+    <script>tinymce.init({
+        selector:'#textta', 
+        plugins  :'link', 
+        toolbar :'link'
     });</script>
 
-<link href="style.css" type="text/css" rel="stylesheet">
+    <link href="style.css" type="text/csss" rel="stylesheet">
 
 </head>
-    
+
 <body>
-    <div class="header">
-        <h1 style="text-align:center !important">El blog de Sa&uacute;l, y V&iacute;ctor</h2>
+
+    <div class="heading">
+        <h1>Sadzee Cloud</h1> 
+        <small>Desarrollo de sitios web y aplicaciones mobil</small>
     </div>
-    
-    <div id="blogArea">
-        
+
+    <div class="main-container">
+        <div class="scape">
+            <div id="scape-sec1" class="scape-section"><span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span>&nbsp;<span>Velocidad</span></div>
+            <div id="scape-sec2" class="scape-section"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>&nbsp; <span>Bases de datos</div>
+        </div>
+        <div class="scape-text">
+            <div id="sectext-sec1">
+                <p>
+                <span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span><span>&nbsp;Funciona a la velocidad de la luz</span>
+                </p>
+                <p>
+                    Los sitios web de Sadzee Cloud usan la tecnolog&iacute;a m&aacute;s reciente para asegurar que tu sitio se cargar&aacute; en fracciones de segundo 
+                    asegurando la comodidad y satisfacci&oacute;n de tus clientes. 
+
+                    Tus potenciales clientes, jam&aacute;s se ir&aacute;n porque la pagina no se carg&oacute;
+                </p>
+            </div>
+            <div id="sectext-sec2">
+                <p>
+                <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span><span>&nbsp;Uso de bases de datos</span>
+                </p>
+                <p>
+                    El uso de bases de datos simples, te permiten, por el mismo precio, tener una aplicaci&oacute;n dinamica que consuma datos simples. 
+                    Es perfecta para poner una tienda en linea, o crear un directorio de tus clientes.
+                </p>
+            </div>
+        </div>
+        <div class="descrip">
+        </div>
+
+        <div class="packages">
+            <div class="pack-container">
+                <div class="pack-container-heading">
+                    Paquete web
+                </div>
+                <div class="pack-container-descrip">
+                    <p>Sitio web simple con contenido estatico, perfecto para dar a concer tus productos, servicios 
+                    e informaci&oacute;n de tu empresa, como ubicaci&oacute;n, misi&oacute;n y valores.  </p>
+
+                    <p>Incluye dise&ntilde;o personalizado y ajustado a tus necesiades, dominio .com y hospedaje web.
+                    </p>
+                </div>
+                <div class="pack-container-price">
+                    $1500.00
+                </div>
+                <div class="pack-container-nav">
+                    <button type="button" id="pack1btn" class="btn btn-block btn-info">Ves m&aacute;s</button>
+                </div>
+            </div>
+
+            <div class="pack-container">
+                <div class="pack-container-heading">
+                    Paquete app
+                </div>
+                <div class="pack-container-descrip">
+                    <p>Aplicaci&oacute;n para smarthphone compatible con todas las mayores plataformas</p>
+                    <p>Perfecta para dar imagen a tu empresa, dar a conocer tus productos y estar en contacto nuevos clientes potenciales clientes 
+                        y estar al tanto con tus clientes actuales.
+                    </p>
+                    <p>
+                        Incluye contenido estatico e informativo, como misi&oacute;n, visi&oacute;n y valores y otra informaci&oacute;n importante como tu ubicaci&oacute;n y otra
+                        informaci&oacute;n de contacto
+                    </p>
+                </div>
+                <div class="pack-container-price">
+                    $3000.00
+                </div>
+                <div class="pack-container-nav">
+                    <button type="button" id="pack2btn" class="btn btn-block btn-info">Ves m&aacute;s</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="entry">
-        <button id="showform-create" class="btn btn-info btn-block">Crear entrada</button>
-    <div>
-    
-    <div class="modal fade" id="addEntryModal" role="dialog">
+
+    <!-- MODALS --> 
+
+    <!-- ================================ pack 1 modal ======================= -->
+    <div class="modal fade" id="pack1modal" role="dialog">
         <div class="modal-dialog">
 
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title"><span id="inputTitle"></span>Crear entrada</h4>
+                    <h4 class="modal-title"><span id="inputTitle"></span>Paquete 1</h4>
                 </div>
                 <div class="modal-body">
-                    <div id="plugins">
-                         <input type="text" id="titletb" name="qtytb" class="form-control form-item" placeholder="Titulo..." />
-                         <textarea id="textta"></textarea>
-                         <button id="sendEntryButton" class="btn btn-info btn-block form-item">Crear entrada</button> 
+                    <div>
+                        <p>
+                        El paquete 1 es perfecto para negocios que quieren ser visibles a nuevos clientes y 
+                        tener una forma de contacto simple con sus clientes actuales. 
+                        </p> 
+                        <p> Puede incluir contenido estatico e informativo, como misi&oacute;n, visi&oacute;n, valores y otra informaci&oacute;n importante 
+                            como la ubicaci&oacute;n del negocio, numero telefonico y otros detalles de contacto. 
+                        </p>
+                        <p>
+                            Tambien es posible contar con contenido dinamico simple, como formularios de contacto, agendas y directorios simples 
+                            o peque&ntilde;as aplicaciones interactivas.
+                        </p>
+                        <p> 
+                            El precio incluye el dise&ntilde;o e implementaci&oacute;n del sitio web, hospedaje web, acceso a estructuras de datos simples y un dominio .com
+                        </p>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -70,7 +153,7 @@ crossorigin="anonymous"></script>
         </div>
 
     </div>
-    
+
 </body>
 
-</html>
+</html>    
