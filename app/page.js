@@ -9,17 +9,24 @@ function sadzee(){
     });
 
     $('#scape-sec1').mouseenter(function(){
-        hideAll(); 
-        $('#sectext-sec1').show();
+        displaySection('#sectext-sec1');
     })
 
     $('#scape-sec2').mouseenter(function(){
-        hideAll(); 
-        $('#sectext-sec2').show();
-        
+        displaySection('#sectext-sec2');
     })
+
+    $('#scape-sec3').mouseenter(function(){
+        displaySection('#sectext-sec3');
+    });
 } 
 
 function hideAll(){
     $( "div[id|='sectext']" ).hide();
 }
+
+function displaySection(section){
+     hideAll(); 
+     $(section).fadeIn();
+}
+

@@ -142,4 +142,8 @@ h3{
     background-color:rgba(255,255,255,0.3);
     border-radius: 5px;
     padding:10px;
+    animation-name: animate-display; 
+    animation-duration: 1s;
 } 
+
+
