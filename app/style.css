@@ -137,7 +137,6 @@ h3{
     margin-left:15px;
     height: 150px;
     background-color:white;
-    margin-top:508904359px; 
     margin-bottom:10px; 
     background-color:rgba(255,255,255,0.3);
     border-radius: 5px;
@@ -145,5 +144,45 @@ h3{
     animation-name: animate-display; 
     animation-duration: 1s;
 } 
+
+@media screen and (max-width: 500px){
+    .main-container{
+        margin-left:0px;
+        margin-right:0px; 
+        margin-top:10px;
+    } 
+
+    .pack-container{
+        background-color:rgba(255,255,255,0.8); 
+        border-radius: 5px;
+
+        max-width: initial;
+        min-width: initial;
+
+        margin:5px;
+        margin-top:20px;
+    
+        float:none;
+        height: 400px;
+
+
+    } 
+
+    .scape-text{
+        clear:both;
+        margin-left:5px;
+        margin-right:5px;
+        height: 150px;
+        background-color:white;
+        margin-bottom:10px; 
+        background-color:rgba(255,255,255,0.3);
+        border-radius: 5px;
+        padding:10px;
+        animation-name: animate-display; 
+        animation-duration: 1s;
+    } 
+
+
+}
 
 
