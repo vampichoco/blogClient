@@ -22,7 +22,8 @@ function loadBlog(){
     base('Entries').select({
         // Selecting the first 3 records in Main View:
         maxRecords: 20,
-        view: "Main View"
+        view: "Main View", 
+        sort: [{field: "dateTime", direction: "desc"}]
     }).eachPage(function page(records, fetchNextPage) {
         // This function (`page`) will get called for each page of records.
 

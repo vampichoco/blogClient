@@ -23,16 +23,13 @@ body{
     margin-right:5px;
     font-family: 'Slabo 27px', serif;
     font-size:x-large;
-    
 }
 
 #blogArea{
-    
     padding:5px;
     margin-top:100px;
     margin-left: 150px;
     margin-right: 150px;
-    
 } 
 
 h2{
@@ -44,9 +41,7 @@ h1{
 }
 
 h3{
-    color:#0081FF!important;
-    /* background-image: -webkit-linear-gradient(left, #FFF0B7, white); */
-    padding:2px;
+    color:#E05576!important;
 }
 
 .header{
@@ -90,8 +85,6 @@ h3{
     
     float:left;
     height: 400px;
-
-
 } 
 
 .pack-container-heading{
