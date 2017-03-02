@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+
 body{
-    background-image: -webkit-linear-gradient(top, #FFE4AA, #E2869B);
-    color: #583B7E;
+    background-color:floralwhite;
+    color: #452A37;
 }
 
 .modal-content{
@@ -17,18 +19,28 @@ body{
 }
 
 .entry{
-    margin-left:15px;
-    margin-right:15px;
+    margin-left:5px;
+    margin-right:5px;
+    font-family: 'Slabo 27px', serif;
+    font-size:x-large;
     
 }
 
 #blogArea{
-    background-color:rgba(255,255,255,0.8);
-    padding:5px;
-    margin:15px;
-    border-radius:5px;
-    margin-top:100px;
     
+    padding:5px;
+    margin-top:100px;
+    margin-left: 150px;
+    margin-right: 150px;
+    
+} 
+
+h2{
+    color:#E05576;
+}
+
+h1{
+    color:#E05576;
 }
 
 h3{
@@ -42,7 +54,7 @@ h3{
     height:80px;
     top:0px;
     width:100%;
-    background-image: -webkit-linear-gradient(top, black,#004486);
+    background-image: -webkit-linear-gradient(top, #703951,#E05576);
 }
 
 .header > h1{
@@ -187,7 +199,14 @@ h3{
         font-size:x-large;
     }  
 
+    #blogArea{
+    
+        padding:5px;
+        margin-top:100px;
+        margin-right: initial;
+        margin-left: initial;
+    
+    } 
+
 
 }
-
-

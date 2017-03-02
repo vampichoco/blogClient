@@ -15,18 +15,19 @@ function onLoad(){
 
 function loadBlog(){
     var Airtable = require('airtable');
+    
 
     var base = new Airtable({apiKey: 'keyYg3bQhyi6DluED'}).base('applCTY3TNBzBqIEX');
 
     base('Entries').select({
         // Selecting the first 3 records in Main View:
-        maxRecords: 3,
+        maxRecords: 20,
         view: "Main View"
     }).eachPage(function page(records, fetchNextPage) {
         // This function (`page`) will get called for each page of records.
 
         records.forEach(function(record) {
-            var title = $('<h3></h3>').html(record.get('Title'));
+            var title = $('<h1></h1>').html(record.get('Title'));
 
             var text = $('<article></article>').html(record.get('Text'));
 
@@ -90,7 +91,7 @@ function sendEntry(){
 
         var div = $('<div class="entry"></div>') 
 
-        var titlehtml = $('<h3></h3>').html(title);
+        var titlehtml = $('<h1></h1>').html(title);
 
         var texthtml = $('<article></article>').html(text);
 
@@ -152,7 +153,7 @@ function createContent(){
                contentType: "application/json",
                dataType: 'json'
            }).done(function (res) {
-               var titlehtml = $('<h3></h3>').html(title); 
+               var titlehtml = $('<h1></h1>').html(title); 
                var texthtml = $('<article></article>').html(text);
            
                var div = $('<div class="entry"></div>') 
