@@ -20,13 +20,10 @@ function loadBlog(){
     var base = new Airtable({apiKey: 'keyYg3bQhyi6DluED'}).base('applCTY3TNBzBqIEX');
 
     base('Entries').select({
-        // Selecting the first 3 records in Main View:
         maxRecords: 20,
         view: "Main View", 
         sort: [{field: "dateTime", direction: "desc"}]
     }).eachPage(function page(records, fetchNextPage) {
-        // This function (`page`) will get called for each page of records.
-
         records.forEach(function(record) {
             var title = $('<h1></h1>').html(record.get('Title'));
 
@@ -40,34 +37,16 @@ function loadBlog(){
         });
 
         
-
         records.forEach(function(record) {
         console.log('Retrieved', record.get('Titulo'));
     });
 
-    // To fetch the next page of records, call `fetchNextPage`.
-    // If there are more records, `page` will get called again.
-    // If there are no more records, `done` will get called.
     fetchNextPage();
 
     }, function done(err) {
         if (err) { console.error(err); return; }
     });
-    //var url = "http://sadzee.cloud/blog"
-    //$.getJSON(url, function(res){
-    //   $.each(res, function(index){
-    //       var entry = res[index];
-    //       var title = $('<h3></h3>').html(entry.title); 
-    //       var text = $('<article></article>').html(entry.text);
-           
-    //       var div = $('<div class="entry"></div>') 
-    //       div.append(title); 
-    //       div.append(text); 
-           
-    //        $('#blogArea').append(div);
-           
-    //   }) 
-    //});
+    
 }
 
 function sendEntry(){
@@ -102,34 +81,6 @@ function sendEntry(){
         $('#blogArea').append(div);
     });
     
-
-     
-    //window.alert(text);
-    
-    //var ob = {title: title, text:text}
-    //var data = JSON.stringify(ob);
-    
-    //var url = "http://sadzee.cloud/upload";
-
-           //$.ajax({
-           //    type: "POST",
-           //    data: data,
-           //    url: url,
-           //    contentType: "application/json",
-           //    dataType: 'json'
-           //}).done(function (res) {
-           //    var titlehtml = $('<h3></h3>').html(title); 
-           //    var texthtml = $('<article></article>').html(text);
-           
-           //    var div = $('<div class="entry"></div>') 
-           //    div.append(titlehtml); 
-           //    div.append(texthtml); 
-           
-           //    $('#blogArea').prepend(div);
-           //}).fail(function (err) {
-               
-           //})
-           
      $('#addEntryModal').modal('hide');
 }
 
