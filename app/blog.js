@@ -15,7 +15,6 @@ function onLoad(){
 
 function loadBlog(){
     var Airtable = require('airtable');
-    
 
     var base = new Airtable({apiKey: 'keyYg3bQhyi6DluED'}).base('applCTY3TNBzBqIEX');
 
@@ -36,7 +35,6 @@ function loadBlog(){
             $('#blogArea').append(div);
         });
 
-        
         records.forEach(function(record) {
         console.log('Retrieved', record.get('Titulo'));
     });
