@@ -78,8 +78,6 @@ h3{
     
     float:left;
     height: 400px;
-
-
 } 
 
 .pack-container-heading{
@@ -115,6 +113,14 @@ h3{
 .pack-container-price{
     text-align: center;
     font-size: xx-large;
+} 
+
+.pack-item{
+    font-size:medium ; 
+    padding-left:10px;
+    padding-right: 20px;
+    padding-top:4px; 
+    padding-bottom:4px;
 }
 
 .scape{
@@ -164,8 +170,6 @@ h3{
     
         float:none;
         height: 400px;
-
-
     } 
 
     .scape-text{
