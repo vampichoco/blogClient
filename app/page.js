@@ -8,6 +8,14 @@ function sadzee(){
         $('#pack1modal').modal('show');
     });
 
+    $('#pack2btn').click(function(){
+        $('#pack2modal').modal('show');
+    });
+
+    $('#pack3btn').click(function(){
+        $('#pack3modal').modal('show');
+    });
+
     $('#scape-sec1').mouseenter(function(){
         displaySection('#sectext-sec1');
     })
